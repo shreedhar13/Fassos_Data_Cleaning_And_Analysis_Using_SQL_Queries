@@ -109,9 +109,10 @@ FROM customer_orders
 JOIN rolls ON customer_orders.roll_id = rolls.roll_id
 GROUP BY rolls.roll_name;
 ```
-```
-![Screenshot (168)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/92bd9d7b-690f-40e7-ae6a-61f6f67465ba)
-```
+
+![2](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/27cb8726-c5f2-4559-a2aa-4915111223e0)
+
+
 
 
 ### Query 3: Total orders for each roll with breakdown by date?
