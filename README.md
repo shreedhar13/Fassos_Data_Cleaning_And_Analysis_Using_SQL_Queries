@@ -48,7 +48,7 @@ This project analyzes the operational data of Fassos, a food delivery service, t
 ### Query 1: [Brief description of the query]
 
 ```sql
--- SQL Query 1
-SELECT * FROM table_name WHERE condition;   
+SELECT * FROM table_name WHERE condition;
+```
 
 These insights and goals achieved demonstrate the value of data analysis in improving operational performance, customer satisfaction, and overall business outcomes for Fassos.
