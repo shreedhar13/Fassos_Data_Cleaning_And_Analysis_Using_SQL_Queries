@@ -4,7 +4,8 @@
 
 This project analyzes the operational data of Fassos, a food delivery service, to gain insights into customer preferences, driver efficiency, order patterns, and ingredient optimization.
 
-## NOTE -> Click this Link to [https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/blob/main/SQL_Script_For_Data_Cleaning_and_analysis.sql).
+ NOTE - Click this Link to read The Comment For Each Query    
+ https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/blob/main/SQL_Script_For_Data_Cleaning_and_analysis.sql
 
 ## Goals of Data Analysis
 
