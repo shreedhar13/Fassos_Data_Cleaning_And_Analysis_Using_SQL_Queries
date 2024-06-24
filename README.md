@@ -124,14 +124,15 @@ GROUP BY rolls.roll_name;
             GROUP BY rolls.roll_name, DATE(customer_orders.order_date)
             ORDER BY order_date;
 ```
-// insert image for output table
+![Screenshot (169)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/a75d2553-21ae-4327-92d2-98beac963d6e)
+
 
 ### Query 4: How many Unique customer orders were made ?
 
 ```sql
 select count(*) from (select distinct customer_id from customer_orders) as t;
 ```
-// insert image for output table
+![Screenshot (171)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/e91251f3-d8f3-4fe4-a0c2-1039d9061205)
 
 ### Query 5: How many successful orders were delivered by each driver?
 
@@ -149,7 +150,10 @@ select count(*) from (select distinct customer_id from customer_orders) as t;
                 from cte
                 group by driver_id) temp;
 ```
-// insert image for output table
+
+
+![t](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/8022b1a5-978e-4665-bcba-0648ad82d47b)
+
 
 ### Query 6: how many,each type of roll is delivered?
 
@@ -168,8 +172,12 @@ select count(*) from (select distinct customer_id from customer_orders) as t;
                 
                                 )
             group by roll_id;
+
+            -- OR--
+
+            select roll_id , count(*) from driver_order d_o, customer_orders c_o where cancellation not like '%C%' and d_o.order_id = c_o.order_id  group by roll_id;
 ```
-// insert image for output table
+![Screenshot (172)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/3e9d5177-20eb-4e70-a4e5-18718ec3f302)
 
 ### Query 7: Hom many veg and no-veg rolls are ordered by each customer?
 
@@ -194,7 +202,7 @@ select count(*) from (select distinct customer_id from customer_orders) as t;
                 ) t1
                 inner join    rolls t2    on  t1.roll_id = t2.roll_id;
 ```
-// insert image for output table
+![Screenshot (173)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/8f5dddb6-e59f-48a4-b0fd-c0b8bfaefe2a)
 
 ### Query 8: all successfully delivered orders?
 
