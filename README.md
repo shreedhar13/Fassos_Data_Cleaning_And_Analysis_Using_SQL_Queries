@@ -42,5 +42,13 @@ This project analyzes the operational data of Fassos, a food delivery service, t
    - Implement real-time analytics to monitor and adjust operations dynamically.
    - Explore predictive analytics to anticipate customer preferences and optimize inventory management further.
    - Expand analysis to include customer feedback data for a more comprehensive view of service quality and customer satisfaction.
+  
+## Queries and Outputs
+
+### Query 1: [Brief description of the query]
+
+```sql
+-- SQL Query 1
+SELECT * FROM table_name WHERE condition;   
 
 These insights and goals achieved demonstrate the value of data analysis in improving operational performance, customer satisfaction, and overall business outcomes for Fassos.
