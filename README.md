@@ -48,6 +48,20 @@ This project analyzes the operational data of Fassos, a food delivery service, t
   
 ## Queries and Outputs
 
+## Datasets (6 Tables )
+1) Customer Orders
+![Screenshot (194)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/c485db0f-db49-4516-974d-f9c9592d96b7)
+2) driver Orders
+![Screenshot (195)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/7222cfeb-458f-45b7-a31b-cb6e920e52b7)
+3) Ingradients
+![Screenshot (196)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/641f1bcd-6d90-4ea3-9207-e3836e1d5d9c)
+4) Driver Info
+![Screenshot (197)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/9ae0a24e-8f4a-419e-8081-1daea7d888c6)
+5) Rolls
+![Screenshot (198)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/d0bd4ca7-f3e2-4218-880a-bfce001c9005)
+6) Roll Types
+![Screenshot (199)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/7fa6fe2f-46d8-4a23-b07f-216d6d0f09b4)
+
 # Data Cleaning Part
 # A) Customer_orders
 ```sql
