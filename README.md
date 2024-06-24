@@ -50,5 +50,174 @@ This project analyzes the operational data of Fassos, a food delivery service, t
 ```sql
 SELECT * FROM table_name WHERE condition;
 ```
+// insert image for output table
 
-These insights and goals achieved demonstrate the value of data analysis in improving operational performance, customer satisfaction, and overall business outcomes for Fassos.
+### Query 2: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 3: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 4: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 5: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 6: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 7: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 8: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 9: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 1: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 10: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 11: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 12: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 13: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 14: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 15: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 16: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 17: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 18: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 19: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 20: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 21: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 22: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 23: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+### Query 24: [Brief description of the query]
+
+```sql
+SELECT * FROM table_name WHERE condition;
+```
+// insert image for output table
+
+## These insights and goals achieved demonstrate the value of data analysis in improving operational performance, customer satisfaction, and overall business outcomes for Fassos.
