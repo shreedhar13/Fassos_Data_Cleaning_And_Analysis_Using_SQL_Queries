@@ -45,10 +45,10 @@ This project analyzes the operational data of Fassos, a food delivery service, t
   
 ## Queries and Outputs
 
-### Query 1: [Brief description of the query]
+### Query 1: [How many rolls were ordered?]
 
 ```sql
-SELECT * FROM table_name WHERE condition;
+select count(*) from customer_orders;  
 ```
 // insert image for output table
 
