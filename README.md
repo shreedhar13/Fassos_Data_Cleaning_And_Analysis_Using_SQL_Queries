@@ -4,6 +4,8 @@
 
 This project analyzes the operational data of Fassos, a food delivery service, to gain insights into customer preferences, driver efficiency, order patterns, and ingredient optimization.
 
+## NOTE -> Click this Link to [https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/blob/main/SQL_Script_For_Data_Cleaning_and_analysis.sql).
+
 ## Goals of Data Analysis
 
 1. Understand customer preferences regarding ingredients in their orders.
@@ -44,6 +46,50 @@ This project analyzes the operational data of Fassos, a food delivery service, t
    - Expand analysis to include customer feedback data for a more comprehensive view of service quality and customer satisfaction.
   
 ## Queries and Outputs
+
+### Data Cleaning Part
+# A) Customer_orders
+```sql
+-- Update customer_orders: Set 'not_include_items' to '0' where it's null or empty
+UPDATE customer_orders
+SET not_include_items = '0'
+WHERE not_include_items IS NULL OR not_include_items = '';
+
+-- Update customer_orders: Set 'extra_items_included' to '0' where it's null, 'NaN', or empty
+UPDATE customer_orders
+SET extra_items_included = '0'
+WHERE extra_items_included IS NULL OR extra_items_included = 'NaN' OR extra_items_included = '';
+```
+
+# A) driver_order
+```sql
+UPDATE driver_order
+SET distance = 0 
+WHERE distance IS NULL;
+
+UPDATE driver_order
+SET duration = 0
+WHERE duration IS NULL;
+
+UPDATE driver_order
+SET cancellation = 0
+WHERE cancellation = '' OR cancellation = 'NaN' OR cancellation IS NULL;
+
+UPDATE driver_order
+SET cancellation = 1
+WHERE cancellation IN ('Cancellation', 'Customer Cancellation');
+
+-- Clean 'distance' in driver_order: Remove 'km' and trim spaces
+UPDATE driver_order
+SET distance = TRIM(REPLACE(distance, 'km', ''))
+WHERE distance LIKE '%km%';
+
+-- Clean 'duration' in driver_order: Extract numeric value for duration in minutes
+UPDATE driver_order
+SET duration = TRIM(LEFT(duration, POSITION('m' IN duration) - 1))
+WHERE duration LIKE '%min%';
+```
+
 
 ### Query 1: How many rolls were ordered?
 
