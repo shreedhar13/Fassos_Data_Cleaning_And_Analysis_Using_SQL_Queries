@@ -48,7 +48,7 @@ This project analyzes the operational data of Fassos, a food delivery service, t
   
 ## Queries and Outputs
 
-### Data Cleaning Part
+# Data Cleaning Part
 # A) Customer_orders
 ```sql
 -- Update customer_orders: Set 'not_include_items' to '0' where it's null or empty
@@ -62,7 +62,7 @@ SET extra_items_included = '0'
 WHERE extra_items_included IS NULL OR extra_items_included = 'NaN' OR extra_items_included = '';
 ```
 
-# A) driver_order
+# B) driver_order
 ```sql
 UPDATE driver_order
 SET distance = 0 
