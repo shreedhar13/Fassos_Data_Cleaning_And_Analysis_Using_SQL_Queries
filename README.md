@@ -61,7 +61,6 @@ This project analyzes the operational data of Fassos, a food delivery service, t
 ![Screenshot (198)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/d0bd4ca7-f3e2-4218-880a-bfce001c9005)
 6) Roll Types
 ![Screenshot (199)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/7fa6fe2f-46d8-4a23-b07f-216d6d0f09b4)
-
 # Data Cleaning Part
 # A) Customer_orders
 ```sql
@@ -75,6 +74,8 @@ UPDATE customer_orders
 SET extra_items_included = '0'
 WHERE extra_items_included IS NULL OR extra_items_included = 'NaN' OR extra_items_included = '';
 ```
+ Cleaned Customer Order
+![Screenshot (200)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/e305c2f4-42fd-41cb-bd2d-d235eb387a70)
 
 # B) driver_order
 ```sql
@@ -104,6 +105,8 @@ UPDATE driver_order
 SET duration = TRIM(LEFT(duration, POSITION('m' IN duration) - 1))
 WHERE duration LIKE '%min%';
 ```
+Cleaned Driver Order
+![Screenshot (201)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/8f908b42-7920-481c-abc6-f0ea4ce17969)
 
 
 ### Query 1: How many rolls were ordered?
