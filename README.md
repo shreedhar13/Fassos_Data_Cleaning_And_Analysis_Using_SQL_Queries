@@ -46,7 +46,7 @@ This project analyzes the operational data of Fassos, a food delivery service, t
    - Explore predictive analytics to anticipate customer preferences and optimize inventory management further.
    - Expand analysis to include customer feedback data for a more comprehensive view of service quality and customer satisfaction.
   
-## QUERIES/QUESTION Raised
+## QUERIES/QUESTIONS Raised
 - Query 1: How many rolls were ordered?
 - Query 2: Total orders for each roll?
 - Query 3: Total orders for each roll with breakdown by date?
@@ -265,7 +265,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (175)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/5ad8dd5d-a132-42e0-af89-d31b235f25e0)
 
-### Query 10:  max_no_of_orders_made_by_each_user_and_those_are_delivered_successfully
+### Query 10:  max no of orders made by each user and those are delivered successfully
 
 ```sql
             select customer_id,count(*) max_no_of_orders_made_by_each_user_and_those_are_delivered_successfully 
@@ -277,7 +277,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 
 ![Screenshot (176)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/f79233fa-5f79-413a-8072-44568b436966)
 
-### Query 10: max no of rolls which are delivered in single order..(ie;on sme order_id how many rolls are ordered)
+### Query 11: max no of rolls which are delivered in single order..(ie;on sme order_id how many rolls are ordered)
 
 ```sql
             select order_id , count(*) rolls_delivered_successfully_per_order_id
@@ -298,7 +298,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (177)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/27e3cc68-28a6-474a-9d53-fc367df101ba)
 
-### Query 11: highest order made id
+### Query 12: highest order made id
 
 ```sql
             select * 
@@ -317,7 +317,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (178)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/7b3dc0c9-6430-42ac-aff3-755b06a92e1e)
 
-### Query 12:  for each customer , how many delivered rolls had at least 1 change and how many had no changes?
+### Query 13:  for each customer , how many delivered rolls had at least 1 change and how many had no changes?
 
 ```sql
 
@@ -354,7 +354,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ![Screenshot (179)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/ccb4384a-3313-404f-9980-6eb7542074b0)
 
 
-### Query 13: total changes made by each user out of all orders thaey made in past ?
+### Query 14: total changes made by each user out of all orders thaey made in past ?
 
 ```sql
 
@@ -395,7 +395,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (180)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/5421ddf6-2ee5-4262-ad8d-653d182b1492)
 
-### Query 14: How many rolls were delivered that had both exclusion and extras?
+### Query 15: How many rolls were delivered that had both exclusion and extras?
 
 ```sql
 
@@ -437,7 +437,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (181)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/4924cf29-cea9-4790-8d77-d62c5b8549a7)
 
-### Query 15: what was the total no of rolls ordered for each hour of the day?
+### Query 16: what was the total no of rolls ordered for each hour of the day?
 
 ```sql
             -- { See   (https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html#function_hour),,,to see date time function present in mysql }
@@ -452,7 +452,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (182)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/958c3b32-f7ed-4c9b-a3d1-0e0f24313200)
 
-### Query 16: what was the no of orders "in_total", for each day of the week ...?
+### Query 17: what was the no of orders "in_total", for each day of the week ...?
 
 ```sql
                 select DAY_name , count(*) count
@@ -475,7 +475,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (183)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/e5fda375-d5e6-45e5-bff4-1305b9d7a436)
 
-### Query 17: what was the avg time in minutes it took for each  driver  to arrive  at the fassos HQ(head quarter) to pickup the order?	
+### Query 18: what was the avg time in minutes it took for each  driver  to arrive  at the fassos HQ(head quarter) to pickup the order?	
 
 ```sql
                 select *
@@ -510,7 +510,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (184)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/a44339b2-2329-4135-830a-dc411058f4d4)
 
-### Query 18: is there any relation ship between no of rolls and how long the order takes to prepare ?
+### Query 19: is there any relation ship between no of rolls and how long the order takes to prepare ?
 
 ```sql
                 select order_id , count(*) as No_of_rolls_ordered_on_this_order_id , truncate(sum(time_gap_between_order_and_pickup_time) / count(*) , 0 )  as         AVG_time_require_to_prepare_this__order_in_minutes
@@ -528,7 +528,7 @@ select * from driver_order where cancellation in ('','NaN') or cancellation is n
 ```
 ![Screenshot (185)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/3c88ca23-f277-4a01-b260-009702ebde85)
 
-### Query 19: what was the average distance travelled for each customer?
+### Query 20: what was the average distance travelled for each customer?
 
 ```sql
         -- A)Avg distance travelled by each driver
@@ -558,7 +558,7 @@ A)
 B)
 ![Screenshot (187)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/1253ea7c-a55d-47d7-9f32-54768a0f49ce)
 
-### Query 20:  what was the difference bn longest and shortest delivery times for all orders?
+### Query 21:  what was the difference bn longest and shortest delivery times for all orders?
 
 ```sql
                 select driver_id , max(duration_in_minute) , min(duration_in_minute) ,  max(duration_in_minute) -  min(duration_in_minute)
@@ -607,7 +607,7 @@ B)
 ```
 ![Screenshot (188)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/42cb35a5-1bf5-4d0e-8fcd-ba4cb6b6c1b5)
 
-### Query 21: Max duration time taken and minimum duration time taken to deliver order in past
+### Query 22: Max duration time taken and minimum duration time taken to deliver order in past
 
 ```sql
                 select max(duration_in_minute) , min(duration_in_minute)
@@ -624,7 +624,7 @@ B)
 
 ![Screenshot (189)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/f845a31c-b182-4b43-9710-e799dba31f16)
 
-### Query 22: Order details of Max duration time taken and minimum duration time taken to deliver order in past
+### Query 23: Order details of Max duration time taken and minimum duration time taken to deliver order in past
 
 ```sql
                 select *
@@ -642,7 +642,7 @@ B)
                 where duration_in_minute in (40 , 10) ;
 ```
 ![Screenshot (190)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/23723cb6-0e77-451d-8aa5-f5ff9c2a1c61)
-### Query 23: what was the avg speed for each driver for each delivery and do you notice any trend for these values?
+### Query 24: what was the avg speed for each driver for each delivery and do you notice any trend for these values?
 
 ```sql
                 select order_id , decimal_distanec_in_km , duration_in_minute  ,(decimal_distanec_in_km / duration_in_minute ) as speed_require_to_reach_destiny_in_KM_Per_Minute
@@ -659,7 +659,7 @@ B)
 ```
 ![Screenshot (191)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/c59c1c96-549f-47ce-a01f-1ceda8f96192)
 
-### Query 24:  what is successful order delivery percentage for each driver?
+### Query 25:  what is successful order delivery percentage for each driver?
 
 ```sql
                 select * , (successfully_delivered_orders * 100 / total_no_of_orders_got_to_deliver )  as success_rate
@@ -680,7 +680,7 @@ B)
 ```
 ![Screenshot (192)](https://github.com/shreedhar13/Fassos_Data_Cleaning_And_Analysis_Using_SQL_Queries/assets/153434680/1afe393c-1ead-4105-9dc8-f4c7a5261912)
 
-### Query 24:  Most used ingredients for each roll:
+### Query 26:  Most used ingredients for each roll:
 
 ```sql
                 SELECT r.roll_name, i.ingredients_name
