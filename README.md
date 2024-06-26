@@ -46,6 +46,36 @@ This project analyzes the operational data of Fassos, a food delivery service, t
    - Explore predictive analytics to anticipate customer preferences and optimize inventory management further.
    - Expand analysis to include customer feedback data for a more comprehensive view of service quality and customer satisfaction.
   
+## QUERIES/QUESTION Raised
+- Query 1: How many rolls were ordered?
+- Query 2: Total orders for each roll?
+- Query 3: Total orders for each roll with breakdown by date?
+- Query 4: How many Unique customer orders were made ?
+- Query 5: How many successful orders were delivered by each driver?
+- Query 6: how many,each type of roll is delivered?
+- Query 7: Hom many veg and no-veg rolls are ordered by each customer?
+- Query 8: all successfully delivered orders?
+- Query 9: cancelled orders
+- Query 10: max no of orders made by each user and those are delivered successfully
+- Query 11: max no of rolls which are delivered in single order..(ie;on sme order_id how many rolls are ordered)
+- Query 12: highest order made id
+- Query 13: for each customer , how many delivered rolls had at least 1 change and how many had no changes?
+- Query 14: total changes made by each user out of all orders thaey made in past ?
+- Query 15: How many rolls were delivered that had both exclusion and extras?
+- Query 16: what was the total no of rolls ordered for each hour of the day?
+- Query 17: what was the no of orders "in_total", for each day of the week ...?
+- Query 18: what was the avg time in minutes it took for each driver to arrive at the fassos HQ(head quarter) to pickup the order?
+- Query 19: is there any relation ship between no of rolls and how long the order takes to prepare ?
+- Query 20: what was the average distance travelled for each customer?
+		        A)Avg distance travelled by each driver
+		        B)Avg distance Travelled for each customer
+- Query 21: what was the difference bn longest and shortest delivery times for all orders?
+- Query 22: Max duration time taken and minimum duration time taken to deliver order in past
+- Query 23: Order details of Max duration time taken and minimum duration time taken to deliver order in past
+- Query 24: what was the avg speed for each driver for each delivery and do you notice any trend for these values?
+- Query 25: what is successful order delivery percentage for each driver?
+- Query 26: Most used ingredients for each roll:
+
 ## Queries and Outputs
 
 ## Datasets (6 Tables )
